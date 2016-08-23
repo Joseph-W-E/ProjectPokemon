@@ -1,0 +1,99 @@
+
+# This is what is stored in the database for a user's pokemon
+class Pokemon extends PokemonBase {
+	private String nickname;
+	private Gender gender;
+	
+	private Stats stats;
+	private EVs evs;
+	
+	private IVs ivs;
+	private Nature nature;
+	
+	private MoveSet moveSet;
+	private Ability ability;
+	
+	private int totalExp, expNeeded;
+}
+
+# This is what is stored in the database for "generic" pokemon
+class PokemonBase {
+	private int id;
+	private String name;
+	
+	private PokedexEntry pokedexEntry;
+	private float percentMale;
+	
+	private Type primaryType, secondaryType;
+	
+	private LearnSet learnSet;
+	private TMSet tmSet;
+	private AbilitySet abilitySet;
+	
+	private int lvlsUpAt;
+	private int lvlsToPokemonId;
+	
+	private LatLong whereFound;
+}
+
+class Gender {
+	private String[] genders = ["male", "female"];
+}
+
+class Stats {
+	private int currentHP;
+	private int HP,      amtPerLvlUpHP;
+	private int Attack,  amtPerLvlUpAttack;
+	private int Defense, amtPerLvlUpDefense;
+	private int SpAtt,   amtPerLvlUpSpAtt;
+	private int SpDef,   amtPerLvlUpSpDef;
+	private int Speed,   amtPerLvlUpSpeed;
+	private int Total;
+}
+
+class EVs {
+	private final int FLOOR = 0;
+	private final int CEILING = 255;
+	private int hp, att, def, spatt, spdef, speed;
+}
+
+class IVs {
+	private final int FLOOR = 0;
+	private final int CEILING = 31;
+	private int hp, att, def, spatt, spdef, speed;
+}
+
+class Type {
+	private String name;
+	private List<Type> noDmgTo;
+	private List<Type> halfDmgTo;
+	private List<Type> doubleDmgTo;
+}
+
+
+
+class Move {
+	private int pp;
+	private Type type;
+	private int tm;
+	private int power;
+	private Stat statType;
+}
+
+
+class Ability {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
