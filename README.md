@@ -7,7 +7,7 @@ The goal of this project is to bring old-school Pokemon to the modern world. Pok
 
 ProjectPokemon exists as an Android app. The user pulls open the app and see's what looks like the Gameboy SP style Pokedex. On the top half, the user sees a map. This is where the user is currently standing in the world. On the bottom half, the user sees a "hub". In this hub, the user can navigate through multiple spaces like: My Pokemon, My Team, My Items, etc... None of this means much without battling, though. Battling occurs in two ways: encountering a wild Pokemon, or challenging a user (whether in Person or at a gym). This battling will look a lot like Gen IV battling, just with worse animations. The gym is still an idea in progress and will come later. Besides battling, there is trading. You can trade Pokemon with anyone *in person*. There are two important reasons for this: account safety and making the game hard. The game wouldn't be fun if you could just get any Pokemon from whoever. With trading required to be in person, there's little incentive to hack someones account. It also makes "exotic" Pokemon a thrill to get.
 
-# The plan
+# The Plan
 ## Step 1 - The JSON files.
 #### Part A - Create a JSON file of the entire list of Pokemon (up to 151).
 This JSON file will reflect the database. This JSON file will remain stagnant. The reasoning for this is to have an easily readable and modifiable data file. See pokemon_base.json for more details on the design.
