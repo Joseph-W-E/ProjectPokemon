@@ -22,5 +22,8 @@ For users to trade and battle one another, there needs to be a system for storin
 
 ## Step 3 - The Android Application.
 #### Part A - Create a basic android application.
+This is the main application. The goal of this step is to just get it created. It will have a minimum Android version of 6.0.
 #### Part B - Implement the ability to get the user's latitude and longitude every ~20 seconds.
+This is the bread and butter of the app. Verify that you can ping lat/long every so often.
 #### Part C - Verify that data can be pulled from / sent to the Web Server.
+Connect to the web server and request data based off the lat/long.
