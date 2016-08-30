@@ -19,6 +19,12 @@ This web server will be implemented with nodejs/express. The goal is to learn ab
 This creation process will mainly involve converting the JSON files from Step 1 to data stored in MongoDB. After adding one Pokemon, the database should be visually seen to verify that the table is storing data as expected.
 #### Part C - Design the schema for holding User information.
 For users to trade and battle one another, there needs to be a system for storing log-in information. The schema should involve parameters like id, email, password, username, pokemon_in_cpu, pokemon_in_team, items.
+#### Part D - Verify that MongoDB is holding all the necessary tables.
+The tables MongoDB should be holding are:
+ - PokemonBase: id, name, pokedex_entry, percent_male, primary_type, secondary_type, learn_set, tm_set, ability_set, lvls_up_at, lvls_up_to, locations, sprites
+ - Moves: id, name, pp, power, accuracy, type, contact_type, tm_id, recharge, delayed, lingering, trapping, causes_effects, targets_self, animation
+ - Items: id, name, image
+ - Users: id, email, username, password, pokemon_in_cpu, pokemon_in_team, items_owned
 
 ## Step 3 - The Android Application.
 #### Part A - Create a basic android application.
