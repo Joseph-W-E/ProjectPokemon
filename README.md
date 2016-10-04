@@ -13,21 +13,22 @@ ProjectPokemon exists as an Android app. The user pulls open the app and see's w
 ## The Database
 ### Pokemon
 ##### PokemonBase
-This table holds the generic information about Pokemon.
+Generic Pokemon information. This table includes basic things like name, id, type, etc.
 ##### Locations
-This table holds all locations that Pokemon can be found.
+Pokemon locations. This table includes lat/long coordinates for Pokemon, as well as the frequency in which a Pokemon will appear at the coordinate.
 ### Moves
 ##### MoveBase
-This table holds all the information about Moves.
+Move information. This table includes basic information about moves like name, power, pp, etc.
 ### Items
 ##### ItemBase
-This table holds all the information about Items.
+Item information. This is table may not be implemented as items may not exist in the game. More information on that will come.
 ### Users
 ##### Users
-This table holds all the information about the Users.
+User information. This table will hold all the information about a user, like emails, encrypted passwords, Pokemon, etc.
 
 ## The Web Server
-The web server uses the Sinatra Ruby gem. It's a very simple RESTful-friendly backend.
+The web server uses the Sinatra Ruby gem. It's a very simple RESTful-friendly backend. The basic idea is to be able to send / get data to / from the server.
 
 ## The Android App
-The Android App is going to be the bread and butter of the project. More info later.
+The Android App is going to be the bread and butter of the project.
+The app caches the data from the database in an effort to minimize data usage / decrease loading times. It also sends GPS coordinates periodically to the web server to see if a Pokemon wants to battle. More information will come on this later.
