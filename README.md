@@ -19,6 +19,9 @@ Pokemon locations. This table includes lat/long coordinates for Pokemon, as well
 ### Moves
 ##### MoveBase
 Move information. This table includes basic information about moves like name, power, pp, etc.
+### Abilities
+##### AbilityBase
+Ability information. This table includes ability names, descriptions, and what generation that ability is from.
 ### Items
 ##### ItemBase
 Item information. This is table may not be implemented as items may not exist in the game. More information on that will come.
