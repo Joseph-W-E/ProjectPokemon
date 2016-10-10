@@ -24,33 +24,6 @@ Priority also implies that a lower priority relies on the completion of the high
    - pokemon_id is the national_number of the Pokemon in PokemonBase
    - ability_id is the id primary key in AbilityBase
 
- 6. Create a table to hold Pokemon
-  - owner_id integer
-  - id integer not null
-  - nickname text
-  - nature_id integer not null
-  - ability_id integer not null
-  - total_xp integer not null
-  - held_item_id integer
-  - move_slot_one_id integer
-  - move_slot_two_id integer
-  - move_slot_three_id integer
-  - move_slot_four_id integer
-  - ev_hp integer not null
-  - ev_attack integer not null
-  - ev_defense integer not null
-  - ev_spatt integer not null
-  - ev_spdef integer not null
-  - ev_speed integer not null
-  - iv_hp integer not null
-  - iv_attack integer not null
-  - iv_defense integer not null
-  - iv_spatt integer not null
-  - iv_spdef integer not null
-  - iv_speed integer not null
-
-create table Pokemon (id integer primary key, owner_id integer, nickname text, nature_id integer not null, ability_id integer not null, total_xp integer not null, held_item_id integer, move_slot_one_id integer, move_slot_two_id integer, move_slot_three_id integer, move_slot_four_id integer, ev_hp integer not null, ev_attack integer not null, ev_defense integer not null, ev_spatt integer not null, ev_spdef integer not null, ev_speed integer not null, iv_hp integer not null, iv_attack integer not null, iv_defense integer not null, iv_spatt integer not null, iv_spdef integer not null, iv_speed integer not null);
-
  7. Populate the LocationBase
   - Only certain Pokemon can have a location. This story will be updated later.
 
@@ -84,3 +57,28 @@ create table Pokemon (id integer primary key, owner_id integer, nickname text, n
  - email text not null
  - password text not null (please encrypt this)
  - username text not null
+
+ 6. Create a table to hold Pokemon
+  - owner_id integer
+  - id integer not null
+  - nickname text
+  - nature_id integer not null
+  - ability_id integer not null
+  - total_xp integer not null
+  - held_item_id integer
+  - move_slot_one_id integer
+  - move_slot_two_id integer
+  - move_slot_three_id integer
+  - move_slot_four_id integer
+  - ev_hp integer not null
+  - ev_attack integer not null
+  - ev_defense integer not null
+  - ev_spatt integer not null
+  - ev_spdef integer not null
+  - ev_speed integer not null
+  - iv_hp integer not null
+  - iv_attack integer not null
+  - iv_defense integer not null
+  - iv_spatt integer not null
+  - iv_spdef integer not null
+  - iv_speed integer not null
