@@ -1,0 +1,86 @@
+/***** Makeshift Story Board *****/
+Priority: 1 > 2 > 3 > ... > n
+Priority also implies that a lower priority relies on the completion of the higher priority tasks.
+
+/***** Backlog *****/
+ 1. Fill in the gaps on the PokemonBase table
+  - Locate missing Pokemon in the PokemonBase table
+   - Missing Pokemon can be identified by gaps in the 'national_number' column
+  - For each missing Pokemon, crawl pokemondb.net to extract the information
+   - The reason the Pokemon are missing is that the names in 'pokemon.csv' didn't match the respective section in the pokemondb.net url
+   - This may require manually entering the url for the scraping tool
+   - This may require manually scraping the data
+  - Put the information into the PokemonBase table
+   - Use the SQLite3 library to insert the data
+   - This may require manually entering the data
+
+ 2. Map MoveBase ids to PokemonBase ids
+  - The table to hold this mapping is PokemonMoveMapper (pokemon_id, move_id)
+   - pokemon_id is the national_number of the Pokemon in PokemonBase
+   - move_id is the id primary key in MoveBase
+
+ 3. Map AbilityBase ids to PokemonBase ids
+  - The table to hold this mapping is PokemonAbilityMapper (pokemon_id, ability_id)
+   - pokemon_id is the national_number of the Pokemon in PokemonBase
+   - ability_id is the id primary key in AbilityBase
+
+ 4. Create a NatureBase table to hold Nature information
+  - id integer primary key
+  - name text not null
+  - formula text not null
+   - The formula should follow this format: +stat-stat
+    - ex. +spatt-spdef
+    - ex. +none-none
+    - ex. +att-speed
+
+ 5. Create a Users table to hold the following information
+  - id integer primary key
+  - email text not null
+  - password text not null (please encrypt this)
+  - username text not null
+
+ 6. Create a table to hold Pokemon
+  - owner_id integer
+  - id integer not null
+  - nickname text
+  - nature_id integer not null
+  - ability_id integer not null
+  - total_xp integer not null
+  - held_item_id integer
+  - move_slot_one_id integer
+  - move_slot_two_id integer
+  - move_slot_three_id integer
+  - move_slot_four_id integer
+  - ev_hp integer not null
+  - ev_attack integer not null
+  - ev_defense integer not null
+  - ev_spatt integer not null
+  - ev_spdef integer not null
+  - ev_speed integer not null
+  - iv_hp integer not null
+  - iv_attack integer not null
+  - iv_defense integer not null
+  - iv_spatt integer not null
+  - iv_spdef integer not null
+  - iv_speed integer not null
+
+create table Pokemon (id integer primary key, owner_id integer, nickname text, nature_id integer not null, ability_id integer not null, total_xp integer not null, held_item_id integer, move_slot_one_id integer, move_slot_two_id integer, move_slot_three_id integer, move_slot_four_id integer, ev_hp integer not null, ev_attack integer not null, ev_defense integer not null, ev_spatt integer not null, ev_spdef integer not null, ev_speed integer not null, iv_hp integer not null, iv_attack integer not null, iv_defense integer not null, iv_spatt integer not null, iv_spdef integer not null, iv_speed integer not null);
+
+ 7. Populate the LocationBase
+  - Only certain Pokemon can have a location. This story will be updated later.
+
+/***** Queued *****/
+
+
+/***** In Progress *****/
+
+
+/***** Finished *****/
+ - Create AbilityBase table
+ - Create MoveBase table
+ - Create PokemonBase table
+ - Create PokemonAbilityMapper table
+ - Create PokemonMoveMapper table
+ - Populate AbilityBase table
+ - Populate MoveBase table
+ - Populate PokemonBase table

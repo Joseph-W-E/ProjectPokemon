@@ -1,0 +1,23 @@
+/***** Makeshift Story Board *****/
+Priority: 1 > 2 > 3 > ... > n
+Priority also implies that a lower priority relies on the completion of the higher priority tasks.
+
+/***** Backlog *****/
+ 1. Design the RESTful calls
+  - GET
+  - POST
+  - PUT
+  - DELETE
+
+ 2. Link the database queries to the RESTful calls
+
+ 3. Add authentication / encryption
+
+/***** Queued *****/
+
+
+/***** In Progress *****/
+
+
+/***** Finished *****/
+ - Create the basic server

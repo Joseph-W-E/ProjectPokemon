@@ -1,0 +1,31 @@
+/***** Makeshift Story Board *****/
+Priority: 1 > 2 > 3 > ... > n
+Priority also implies that a lower priority relies on the completion of the higher priority tasks.
+
+/***** Backlog *****/
+ 1. Create a template project
+
+ 2. Design the login screen
+
+ 3. Design the main screen
+
+ 4. Design the trading screen
+
+ 5. Design the battle screen
+  - Battling another user
+  - Battling a wild Pokemon
+
+ 6. Brainstorm any other screens the user may see.
+  - Account settings
+  - My Pokemon / Items / etc...
+
+ 7. Program the entire thing in one sitting.
+  - But actually. Design first, program later.
+
+/***** Queued *****/
+
+
+/***** In Progress *****/
+
+
+/***** Finished *****/

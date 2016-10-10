@@ -19,9 +19,13 @@ Pokemon locations. This table includes lat/long coordinates for Pokemon, as well
 ### Moves
 ##### MoveBase
 Move information. This table includes basic information about moves like name, power, pp, etc.
+##### PokemonMoveMapper
+Helper table to map PokemonBase ids to MoveBase ids.
 ### Abilities
 ##### AbilityBase
 Ability information. This table includes ability names, descriptions, and what generation that ability is from.
+##### PokemonAbilityMapper
+Helper table to map PokemonBase ids to AbilityBase ids.
 ### Items
 ##### ItemBase
 Item information. This is table may not be implemented as items may not exist in the game. More information on that will come.
@@ -30,7 +34,7 @@ Item information. This is table may not be implemented as items may not exist in
 User information. This table will hold all the information about a user, like emails, encrypted passwords, Pokemon, etc.
 
 ## The Web Server
-The web server uses the Sinatra Ruby gem. It's a very simple RESTful-friendly backend. The basic idea is to be able to send / get data to / from the server.
+The web server uses the Sinatra Ruby gem. It's a very simple RESTful-friendly backend. The basic idea is to send / get data to / from the server.
 
 ## The Android App
 The Android App is going to be the bread and butter of the project.

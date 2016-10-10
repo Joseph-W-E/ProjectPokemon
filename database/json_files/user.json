@@ -12,19 +12,12 @@
         "pokemon_base_id": "pb000",
         "nickname":        "cabage man",
         "stats":           {
-            "current_hp":      20,
             "hp":              20,
-            "hp_on_lvl_up":    5,
             "attack":          20,
-            "att_on_lvl_up":   1,
             "defense":         20,
-            "def_on_lvl_up":   5,
             "spattack":        20,
-            "spatt_on_lvl_up": 2,
             "spdefense":       20,
-            "spdef_on_lvl_up": 4,
-            "speed":           20,
-            "speed_on_lvl_up": 1
+            "speed":           20
         },
         "evs":             {
           "floor":   0,
@@ -54,8 +47,7 @@
           "slot_4": "mv003"
         },
         "ability":         "ab001",
-        "total_exp":       0,
-        "exp_needed":      1000
+        "total_exp":       0
       }
     ],
     "items":        [
