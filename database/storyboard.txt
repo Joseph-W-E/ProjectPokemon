@@ -24,12 +24,6 @@ Priority also implies that a lower priority relies on the completion of the high
    - pokemon_id is the national_number of the Pokemon in PokemonBase
    - ability_id is the id primary key in AbilityBase
 
- 5. Create a Users table to hold the following information
-  - id integer primary key
-  - email text not null
-  - password text not null (please encrypt this)
-  - username text not null
-
  6. Create a table to hold Pokemon
   - owner_id integer
   - id integer not null
@@ -84,3 +78,9 @@ create table Pokemon (id integer primary key, owner_id integer, nickname text, n
     - ex. +spatt-spdef
     - ex. +none-none
     - ex. +att-speed
+
+5. Create a Users table to hold the following information
+ - id integer primary key
+ - email text not null
+ - password text not null (please encrypt this)
+ - username text not null
