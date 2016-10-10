@@ -3,8 +3,6 @@ Priority: 1 > 2 > 3 > ... > n
 Priority also implies that a lower priority relies on the completion of the higher priority tasks.
 
 /***** Backlog *****/
- 1. Create a template project
-
  2. Design the login screen
 
  3. Design the main screen
@@ -29,3 +27,4 @@ Priority also implies that a lower priority relies on the completion of the high
 
 
 /***** Finished *****/
+ 1. Create a template project
