@@ -24,15 +24,6 @@ Priority also implies that a lower priority relies on the completion of the high
    - pokemon_id is the national_number of the Pokemon in PokemonBase
    - ability_id is the id primary key in AbilityBase
 
- 4. Create a NatureBase table to hold Nature information
-  - id integer primary key
-  - name text not null
-  - formula text not null
-   - The formula should follow this format: +stat-stat
-    - ex. +spatt-spdef
-    - ex. +none-none
-    - ex. +att-speed
-
  5. Create a Users table to hold the following information
   - id integer primary key
   - email text not null
@@ -84,3 +75,12 @@ create table Pokemon (id integer primary key, owner_id integer, nickname text, n
  - Populate AbilityBase table
  - Populate MoveBase table
  - Populate PokemonBase table
+
+ 4. Create a NatureBase table to hold Nature information
+  - id integer primary key
+  - name text not null
+  - formula text not null
+   - The formula should follow this format: +stat-stat
+    - ex. +spatt-spdef
+    - ex. +none-none
+    - ex. +att-speed
