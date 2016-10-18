@@ -3,17 +3,6 @@ Priority: 1 > 2 > 3 > ... > n
 Priority also implies that a lower priority relies on the completion of the higher priority tasks.
 
 /***** Backlog *****/
- 1. Fill in the gaps on the PokemonBase table
-  - Locate missing Pokemon in the PokemonBase table
-   - Missing Pokemon can be identified by gaps in the 'national_number' column
-  - For each missing Pokemon, crawl pokemondb.net to extract the information
-   - The reason the Pokemon are missing is that the names in 'pokemon.csv' didn't match the respective section in the pokemondb.net url
-   - This may require manually entering the url for the scraping tool
-   - This may require manually scraping the data
-  - Put the information into the PokemonBase table
-   - Use the SQLite3 library to insert the data
-   - This may require manually entering the data
-
  2. Map MoveBase ids to PokemonBase ids
   - The table to hold this mapping is PokemonMoveMapper (pokemon_id, move_id)
    - pokemon_id is the national_number of the Pokemon in PokemonBase
@@ -27,10 +16,27 @@ Priority also implies that a lower priority relies on the completion of the high
  7. Populate the LocationBase
   - Only certain Pokemon can have a location. This story will be updated later.
 
+ 8. Add sprites to the PokemonBase table
+
+ 9. Add sprites / animations to the MoveBase table
+
 /***** Queued *****/
 
 
 /***** In Progress *****/
+
+ 1. Fill in the gaps on the PokemonBase table
+  - Locate missing Pokemon in the PokemonBase table
+   - Missing Pokemon can be identified by gaps in the 'national_number' column
+  - For each missing Pokemon, crawl pokemondb.net to extract the information
+   - The reason the Pokemon are missing is that the names in 'pokemon.csv' didn't match the respective section in the pokemondb.net url
+   - This may require manually entering the url for the scraping tool
+   - This may require manually scraping the data
+  - Put the information into the PokemonBase table
+   - Use the SQLite3 library to insert the data
+   - This may require manually entering the data
+   ************** UPDATE **************
+   After much consideration, I've decided to ditch this story. Now, we will be making a V2 version of the PokemonBase table. This new version will ONLY have the original 151 pokemon, with all updated information. The old PokemonBase table will not be dropped. PokemonBaseV2 will up fully updated and correct. Then, after this table is updated with all 151 pokemon, the next generation can be added.
 
 
 /***** Finished *****/
