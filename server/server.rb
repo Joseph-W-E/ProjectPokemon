@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sqlite3'
 require 'json'
 
-set :bind, '10.26.69.83'
+#set :bind, '10.26.69.83'
 
 # File locations
 database_location  = "../database/pokemon_database.db"
